@@ -1,3 +1,18 @@
-header{
-    font-size: large;
+header {
+    font-size: 3vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#menu > div {
+    padding: 5px 30px;
+    background-color: lightblue;
 }
