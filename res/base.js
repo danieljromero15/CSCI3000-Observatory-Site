@@ -1,6 +1,10 @@
 // need to load header across every page, easier to load this function than copy and paste code every time
 // plus when one change is made here the change is made across every page
 window.onload = function () {
+    loadHeader();
+}
+
+function loadHeader(){
     document.getElementById("header").innerHTML = "<div id=\"menu\" class=\"flex-container\">\n" +
         "        <div><a href=\"index.html\">Observatory</a></div>\n" +
         "        <div><a href=\"contact.html\">Contact Us</a></div>\n" +
