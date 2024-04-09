@@ -28,6 +28,10 @@ header {
     color: white;
 }
 
+#headericon{
+    height: 1em;
+}
+
 #facebook {
     margin-top: 10px;
     float: right;
