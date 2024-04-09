@@ -5,7 +5,7 @@ window.onload = function () {
 }
 
 function loadHeader(){
-    document.getElementById("header").innerHTML = "<div id='menu' class='flex-container'>\n" +
+    document.getElementById("header").innerHTML = "<div id='siteName'>North Georgia Astronomical Observatory</div><div id='menu' class='flex-container'>\n" +
         "        <div><a href='index.html'>Observatory</a></div>\n" +
         "        <div><a href='contact.html'>Contact Us</a></div>\n" +
         "        <div><a href='appointments.html'>Appointments</a></div>\n" +
