@@ -23,7 +23,18 @@ header {
     color: white;
 }
 
-#facebook{
+#siteName {
+    background-color: blue;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+#headericon{
+    height: 1em;
+}
+
+#facebook {
     margin-top: 10px;
     float: right;
 }
