@@ -5,7 +5,7 @@ window.onload = function () {
 }
 
 function loadHeader(){
-    document.getElementById("header").innerHTML = "<div id='siteName'><img alt='University of North Georgia Logo' id='headericon' src='res/UNG_SteepleMark_2c_121x200.png'> Georgia Astronomical Observatory</div><div id='menu' class='flex-container'>\n" +
+    document.getElementById("header").innerHTML = "<div id='siteName'><img alt='University of North Georgia Logo' id='headericon' src='res/UNG_SteepleMark_2c_121x200.png'> North Georgia Astronomical Observatory</div><div id='menu' class='flex-container'>\n" +
         "        <div><a href='index.html'>Observatory</a></div>\n" +
         "        <div><a href='contact.html'>Contact Us</a></div>\n" +
         "        <div><a href='appointments.html'>Appointments</a></div>\n" +
@@ -14,3 +14,4 @@ function loadHeader(){
         "        <div><a href='research.html'>Research</a></div>\n" +
         "    </div>";
 }
+
