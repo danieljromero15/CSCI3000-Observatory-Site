@@ -1,0 +1,21 @@
+{
+  "name": "csci3000-observatory-site",
+  "version": "1.0.0",
+  "description": "Json Package",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danieljromero15/CSCI3000-Observatory-Site"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "jsonpkg"
+  ],
+  "author": "Alex Fountain",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
