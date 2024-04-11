@@ -14,3 +14,4 @@ function loadHeader(){
         "        <div><a href='research.html'>Research</a></div>\n" +
         "    </div>";
 }
+
