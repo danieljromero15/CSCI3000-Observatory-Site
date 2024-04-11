@@ -12,6 +12,10 @@ header {
     padding-bottom: 10px;
 }
 
+.gallery_heading {
+    text-align: center
+}
+
 #menu > div {
     padding: 5px 30px;
 }
