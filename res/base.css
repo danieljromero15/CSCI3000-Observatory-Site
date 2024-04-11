@@ -11,7 +11,7 @@ header {
     background: linear-gradient(blue, darkblue);
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 99vw;
+    width: 100%;
 }
 
 #menu > div {
