@@ -8,8 +8,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: blue;
+    background: linear-gradient(blue, darkblue);
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 #menu > div {
