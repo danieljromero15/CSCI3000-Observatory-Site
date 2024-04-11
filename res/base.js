@@ -11,6 +11,7 @@ function loadHeader(){
         "        <div><a href='appointments.html'>Appointments</a></div>\n" +
         "        <div><a href='about.html'>About Us</a></div>\n" +
         "        <div><a href='calendar.html'>Calendar</a></div>\n" +
+        "        <div><a href='gallery.hrml'>Gallery</a></div>\n" +
         "        <div><a href='research.html'>Research</a></div>\n" +
         "    </div>";
 }
