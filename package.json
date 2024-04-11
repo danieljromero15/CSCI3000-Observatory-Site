@@ -16,6 +16,7 @@
   "author": "Alex Fountain",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "swiper": "^11.1.1"
   }
 }
