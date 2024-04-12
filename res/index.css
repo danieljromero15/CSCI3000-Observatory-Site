@@ -1,10 +1,10 @@
-#ring_nebula{
-    width: 100vw;
-    height: 55vh;
-    margin: 0
+#page-info{
+    font-family: Verdana, serif;
+    color: black;
+    width: 50vw;
 }
 
-#NGAO-header{
-    font-family: Verdana, serif;
-    color: blue;
+#header_image{
+    width: 100vw;
+    margin: 0
 }
