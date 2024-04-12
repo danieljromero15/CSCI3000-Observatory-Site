@@ -5,23 +5,11 @@ body {
 header {
     font-size: 3vh;
     font-family: Verdana serif;
-    border-bottom: 2px solid goldenrod;
     width: 100vw;
-    position: relative;
 }
 
 header a:hover {
     border-bottom: 2px solid gold;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-.sticky + .content {
-    padding-top: 102px;
 }
 
 .flex-container {
@@ -33,6 +21,9 @@ header a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
+    position: fixed;
+    opacity: 0.85;
+    border-bottom: 2px solid goldenrod;
 }
 
 #menu > div {
