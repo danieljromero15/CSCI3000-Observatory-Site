@@ -1,1 +1,10 @@
-.idea/
+# IDE files
+.idea
+.vscode
+.vscode-test
+.temp
+.cache
+
+# files created by node.js
+node_modules
+.npm
