@@ -35,13 +35,6 @@ header a:hover {
     color: black;
 }
 
-#siteName {
-    background-color: blue;
-    text-align: center;
-    padding-top: 10px;
-    color: white;
-}
-
 #headericon {
     height: 1em;
 }
