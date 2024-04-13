@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+p, h1, h2, h3 {
+    margin-left: 0.2in;
+    margin-right: 0.2in;
+}
+
 header {
     font-size: 3vh;
     font-family: Verdana serif;
