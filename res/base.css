@@ -22,6 +22,9 @@ header a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+#menu {
     background: linear-gradient(white, whitesmoke);
     padding-top: 10px;
     padding-bottom: 10px;
