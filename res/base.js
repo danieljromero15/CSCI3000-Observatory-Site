@@ -21,5 +21,5 @@ const headers = ["crab_chandra.jpg", "crab-nebula-mosaic.jpg", "hubble deep fiel
 
 function chooseImage(){
     let random = Math.floor(Math.random() * headers.length);
-    document.getElementById("header_image").setAttribute("src", "res/" + headers[random]);
+    document.getElementById("header_image").setAttribute("src", "res/images/" + headers[random]);
 }
