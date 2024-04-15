@@ -16,7 +16,7 @@ header a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     background: linear-gradient(white, whitesmoke);
     padding-top: 10px;
     padding-bottom: 10px;
