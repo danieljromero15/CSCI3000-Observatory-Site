@@ -10,6 +10,19 @@
     margin: 0
 }
 
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.img-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%)
+}
+
 body {
     background-color: lightgray;
 }
