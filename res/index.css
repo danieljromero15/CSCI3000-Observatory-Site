@@ -1,10 +1,10 @@
-#title {
+.title {
     font-family: Verdana, serif;
     font-size: 30px;
     color: darkblue;
 }
 
-#page-content {
+.page-content {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
@@ -77,6 +77,7 @@
 }
 
 .footer-section {
+    margin-top: 10px;
     color: white;
     text-align: center;
     background-color: darkblue;
