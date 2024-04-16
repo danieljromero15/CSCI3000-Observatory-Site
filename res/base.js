@@ -20,7 +20,7 @@ function loadHeader() {
 }
 
 function chooseImage() {
-    const headers = ["crab_chandra.jpg", "crab-nebula-mosaic.jpg", "hubble deep field.webp", "MeerKAT on SDSS.png", "sombrero-galaxy.jpg", "Space1.jfif"];
+    const headers = ["crab_chandra.webp", "crab-nebula-mosaic.webp", "hubble deep field.webp", "MeerKAT on SDSS.webp", "sombrero-galaxy.webp", "Space1.webp"];
 
     let random = Math.floor(Math.random() * headers.length);
     document.getElementById("header_image").setAttribute("src", "res/images/" + headers[random]);
