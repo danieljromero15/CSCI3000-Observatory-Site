@@ -9,9 +9,13 @@
     color: black;
 }
 
+body {
+    background-color: lightgray;
+}
+
 #header_image {
     width: 100%;
-    height: 40vw;
+    height: 45vw;
     margin: 0;
     object-fit: cover;
 }
@@ -22,10 +26,11 @@
     text-align: center;
     color: white;
     overflow: hidden;
-    height: 45vw; /* Needs to be more than #header_image height */
+    height: 50vw; /* Needs to be more than #header_image height */
 }
 
 .img-text {
+    text-shadow: 1px 1px 1px dimgray;
     position: absolute;
     top: 40%;
     left: 30%;
@@ -33,8 +38,8 @@
 }
 
 #student-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: whitesmoke;
     color: black;
     height: 500px;
@@ -42,8 +47,8 @@
 }
 
 #public-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: whitesmoke;
     color: black;
     height: 400px;
@@ -51,8 +56,8 @@
 }
 
 #visit-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: whitesmoke;
     color: black;
     height: 300px;
@@ -66,11 +71,26 @@
     justify-content: space-evenly;
 }
 
-.image-section {
+.telescope-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.telescopes {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.image-section {
+    margin: 0;
 }
 
 .info-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: white;
 }
 
@@ -80,8 +100,10 @@
 }
 
 .footer-section {
-    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: white;
+    font-size: 20px;
     text-align: center;
     background-color: darkblue;
 }
