@@ -1,7 +1,12 @@
-#page-info {
+#title {
     font-family: Verdana, serif;
+    font-size: 30px;
+    color: darkblue;
+}
+
+#page-content {
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
-    width: 50vw;
 }
 
 #header_image {
@@ -11,18 +16,68 @@
 }
 
 .img-container {
-    position: relative;
+    font-family: Verdana, serif;
+    font-size: 50px;
     text-align: center;
     color: white;
 }
 
 .img-text {
     position: absolute;
-    top: 30%;
-    left: 15%;
+    top: 40%;
+    left: 30%;
     transform: translate(-50%, -50%)
 }
 
-body {
-    background-color: lightgray;
+#student-table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    color: black;
+    height: 500px;
+    width: 400px;
+}
+
+#public-table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    color: black;
+    height: 400px;
+    width: 400px;
+}
+
+#visit-table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    color: black;
+    height: 300px;
+    width: 400px;
+}
+
+.info-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.image-section {
+
+}
+
+.info-section {
+    background-color: white;
+}
+
+.table-section {
+    text-align: center;
+    background-color: slategray;
+}
+
+.footer-section {
+    color: white;
+    text-align: center;
+    background-color: darkblue;
 }
