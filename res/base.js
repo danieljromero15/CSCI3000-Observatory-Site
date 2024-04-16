@@ -1,9 +1,9 @@
 // need to load header across every page, easier to load this function than copy and paste code every time
 // plus when one change is made here the change is made across every page
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     chooseImage();
-}
+});
 
 function loadHeader() {
     document.getElementById("header").innerHTML =
