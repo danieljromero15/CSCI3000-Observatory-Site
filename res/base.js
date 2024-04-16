@@ -8,7 +8,7 @@ window.onload = function () {
 function loadHeader() {
     document.getElementById("header").innerHTML =
         "<span id='menu'>" +
-        "<div><a href='index.html'><img alt='University of North Georgia Logo' id='headericon' src='res/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
+        "<div><a href='index.html'><img alt='University of North Georgia Logo' id='headericon' src='res/icons/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
         "<div class='flex-container'>" +
         "<div><a href='contact.html'>Contact Us</a></div>\n" +
         "<div><a href='appointments.html'>Appointments</a></div>\n" +
