@@ -30,6 +30,7 @@ body {
 }
 
 .img-text {
+    text-shadow: 1px 1px 1px dimgray;
     position: absolute;
     top: 40%;
     left: 30%;
@@ -37,8 +38,8 @@ body {
 }
 
 #student-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: whitesmoke;
     color: black;
     height: 500px;
@@ -46,8 +47,8 @@ body {
 }
 
 #public-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: whitesmoke;
     color: black;
     height: 400px;
@@ -55,8 +56,8 @@ body {
 }
 
 #visit-table {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: whitesmoke;
     color: black;
     height: 300px;
@@ -70,14 +71,27 @@ body {
     justify-content: space-evenly;
 }
 
+.telescope-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.telescopes {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .image-section {
     margin: 0;
 }
 
 .info-section {
-    padding-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: white;
-    padding-bottom: 150px;
 }
 
 .table-section {
@@ -86,6 +100,8 @@ body {
 }
 
 .footer-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: white;
     font-size: 20px;
     text-align: center;
