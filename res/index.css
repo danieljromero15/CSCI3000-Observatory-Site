@@ -22,7 +22,7 @@
     text-align: center;
     color: white;
     overflow: hidden;
-    height: 45vw;
+    height: 45vw; /* Needs to be more than #header_image height */
 }
 
 .img-text {
