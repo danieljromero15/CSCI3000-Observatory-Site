@@ -1,14 +1,14 @@
 // need to load header across every page, easier to load this function than copy and paste code every time
 // plus when one change is made here the change is made across every page
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     chooseImage();
-}
+});
 
 function loadHeader() {
     document.getElementById("header").innerHTML =
         "<span id='menu'>" +
-        "<div><a href='index.html'><img alt='University of North Georgia Logo' id='headericon' src='res/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
+        "<div><a href='index.html'><img alt='University of North Georgia Logo' id='headericon' src='res/icons/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
         "<div class='flex-container'>" +
         "<div><a href='contact.html'>Contact Us</a></div>\n" +
         "<div><a href='appointments.html'>Appointments</a></div>\n" +
