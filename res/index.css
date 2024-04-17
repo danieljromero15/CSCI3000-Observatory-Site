@@ -86,13 +86,14 @@
 
 .info-section {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     background-color: white;
 }
 
 .table-section {
     text-align: center;
     background-color: slategray;
+    padding-bottom: 10px;
 }
 
 .footer-section {
