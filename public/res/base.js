@@ -10,6 +10,21 @@ document.getElementById("appointments").addEventListener("click", function(){
 document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     chooseImage();
+
+    let header = document.querySelector("#header");
+    let sticky = header.offsetTop;
+
+    window.onscroll = function() {
+        if (window.scrollY > sticky) {
+            document.getElementById("menu").style.background = "linear-gradient(white, whitesmoke)"
+            document.getElementById("menu").style.borderBottom = '2px solid goldenrod';
+            document.getElementById("menu div a").style.color = 'black';
+        }
+        else {
+            document.getElementById("menu").style.background = 'transparent';
+            document.getElementById("menu").style.borderBottom = '';
+        }
+    }
 });
 
 function loadHeader() {
@@ -19,7 +34,7 @@ function loadHeader() {
         "<div class='flex-container'>" +
         "<div><a href='index.html#contact'>Contact Us</a></div>\n" +
         "<div><a href='index.html#appointments'>Appointments</a></div>\n" +
-        "<div><a href='about.html'>About Us</a></div>\n" +
+        "<div><a href='index.html#telescopes'>About Us</a></div>\n" +
         "<div><a href='index.html#calendar-section'>Calendar</a></div>\n" +
         "<div><a href='research.html'>Research</a></div>\n" +
         "</div>" +
@@ -30,19 +45,4 @@ function chooseImage() {
 
     let random = Math.floor(Math.random() * headers.length);
     document.getElementById("header_image").setAttribute("src", "res/images/" + headers[random]);
-}
-
-let header = document.querySelector("#header");
-let sticky = header.offsetTop;
-
-window.onscroll = function() {
-    if (window.scrollY > sticky) {
-        document.getElementById("menu").style.background = 'transparent';
-        document.getElementById("menu div a").style.color = 'white';
-        document.getElementById("menu").style.borderBottom = '';
-    } else {
-        document.getElementById("menu").style.background = 'linear-gradient(white, whitesmoke)';
-        document.getElementById("menu div a").style.color = 'black';
-        document.getElementById("menu").style.borderBottom = '2px solid goldenrod';
-    }
 }

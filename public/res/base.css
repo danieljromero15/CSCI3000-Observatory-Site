@@ -31,25 +31,24 @@ html {
 }
 
 #menu {
-    background: linear-gradient(white, whitesmoke);
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
     position: fixed;
     top: 0;
-    opacity: 0.85;
-    border-bottom: 2px solid goldenrod;
+    opacity: 1;
+    z-index: 1;
 }
 
 #menu div {
     padding: 5px 30px;
-    color: black;
     display: inline-block;
 }
 
 #menu div a {
     text-decoration: none;
-    color: black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 #headericon {
