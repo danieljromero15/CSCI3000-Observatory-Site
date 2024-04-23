@@ -12,8 +12,8 @@
 <section class="image-section">
     <header id="header"></header>
     <div class="img-container">
-        <img src="" alt="Website Header Image" id="header_image">
-        <div class="img-text"><strong>Exploring Space with NGAO!</strong></div>
+        <img src="" alt="" id="header_image">
+        <div class="img-text"><strong>UNG Observatory<br>Explore the Cosmos with NGAO!</strong></div>
     </div>
 </section>
 
@@ -21,20 +21,27 @@
 <!--<iframe src="https://www.youtube.com/embed/IWVJq-4zW24?si=so3u2bqWtHtekjZI&amp;controls=0&amp;autoplay=1&amp;mute=1" allow="autoplay; muted;" id="header_image"></iframe>-->
 
 <section class="info-section">
-    <div>
-        <h1 class="title"><strong>North Georgia Astronomical Observatory</strong></h1>
-        <p class="page-content">
-            The North Georgia Astronomical Observatory exists to promote astronomy education
-            to University of North Georgia students, as well as the public. This
-            state-of-the-art facility is located only four miles from the UNG Dahlonega Campus.
-        </p>
+    <div class="info-flex">
+        <div>
+            <h1 class="title"><strong>North Georgia Astronomical Observatory</strong></h1>
+            <p class="page-content">
+                The North Georgia Astronomical Observatory exists to promote astronomy education to <br>
+                University of North Georgia students  as well as the public. This  state-of-the-art <br>
+                facility is located only four miles from the UNG Dahlonega Campus. <br>
+            </p>
+            <h2>3000 Dawsonville Hwy, Dahlonega, GA 30533</h2>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.290180958715!2d-84.05634388871104!3d34.52087539272765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885f659f334a18f5%3A0x92d524aa93e226f5!2sNorth%20Georgia%20Astronomical%20Observatory!5e0!3m2!1sen!2sus!4v1713372669623!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 </section>
 
 <section class="telescopes">
-    <h1 class="title">Meet our Telescopes!</h1>
+    <h1>Meet our Telescopes!</h1>
     <div class="telescope-flex">
-        <div>
+        <div class="telescope-background">
             <h2 class="title">0.6 Meter Aperture</h2>
             <img src="res/images/0.6-diameter.webp" alt="0.6 Meter Aperture Telescope"
                  style="width:600px;height:400px;" loading="lazy">
@@ -44,7 +51,8 @@
                 tracking stars! <br>
             </p>
         </div>
-        <div>
+
+        <div class="telescope-background">
             <h2 class="title">0.7 Meter Aperture</h2>
             <img src="res/images/0.7-diameter.webp" alt="0.7 Meter Aperture Telescope"
                  style="width:600px;height:400px;" loading="lazy">
@@ -57,7 +65,7 @@
     </div>
 </section>
 
-<section class="table-section">
+<section class="table-section" id="appointments">
     <div class="info-flex">
         <div>
             <table id="student-table">
@@ -89,7 +97,7 @@
             <table id="public-table">
                 <tr>
                     <th class="title">
-                        <strong>Public Telescope Viewing</strong>
+                        <strong>Public Viewing</strong>
                     </th>
                 </tr>
                 <tr>
