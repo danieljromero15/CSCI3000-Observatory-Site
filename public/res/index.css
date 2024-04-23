@@ -122,3 +122,36 @@ h2 {
     text-align: center;
     background-color: darkblue;
 }
+
+.contact-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact-section{
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#fbi{
+    justify-content: right;
+    justify-items: center;
+    padding-right: 10%;
+}
+
+#calendar {
+    justify-content: center;
+    display: flex;
+}
+
+.calendar-section{
+    /*TODO find suitable bg color*/
+    background: gainsboro;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
