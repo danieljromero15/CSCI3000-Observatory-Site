@@ -32,7 +32,7 @@ function chooseImage() {
     document.getElementById("header_image").setAttribute("src", "res/images/" + headers[random]);
 }
 
-let header = document.getElementById("header");
+let header = document.querySelector("#header");
 let sticky = header.offsetTop;
 
 window.onscroll = function() {

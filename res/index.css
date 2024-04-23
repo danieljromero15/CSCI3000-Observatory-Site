@@ -16,6 +16,10 @@ h2 {
     color: darkblue;
 }
 
+th {
+    vertical-align: center;
+}
+
 .page-content {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
