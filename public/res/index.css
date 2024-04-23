@@ -86,7 +86,7 @@ h2 {
     justify-content: space-evenly;
 }
 
-.telescope-background{
+.telescope-background {
     background-color: whitesmoke;
     padding-left: 30px;
     padding-right: 30px;
@@ -123,14 +123,14 @@ h2 {
     background-color: darkblue;
 }
 
-.contact-flex{
+.contact-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.contact-section{
+.contact-section {
     background-color: white;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -138,7 +138,7 @@ h2 {
     font-size: x-large;
 }
 
-#fbi{
+#fbi {
     justify-content: right;
     justify-items: center;
     padding-right: 10%;
@@ -149,9 +149,33 @@ h2 {
     display: flex;
 }
 
-.calendar-section{
+.calendar-section {
     /*TODO find suitable bg color*/
     background: gainsboro;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.comments-section {
+    background: lightslategray;
+    padding: 20px;
+}
+
+#submission_result {
+    border: none;
+    height: 30px;
+    overflow: hidden;
+}
+
+#comment {
+    width: 100%;
+}
+
+#submit {
+    float: right;
+}
+
+#comment_form {
+    margin: auto;
+    width: 40%
 }

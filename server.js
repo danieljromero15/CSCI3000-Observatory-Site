@@ -34,7 +34,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, './index.html'));
 });
 
-/*
+
 app.get("/all", function(req, res){
     conn.query("SELECT * FROM comments", function (err, rows) {
         if(err){
@@ -46,6 +46,10 @@ app.get("/all", function(req, res){
                 html += "<li>" + row.commentstext + "</li>";
             });
             html += "</ol>";
+
+            if(rows.length === 0){
+                html = "<p>No comments found.</p>";
+            }
             res.send(html);
         }
     });
@@ -61,10 +65,9 @@ app.post("/form_process", function(req, res){
             console.log("Inserted " + result.affectedRows + " row"); // success
 
             let html = "";
-            html += "Success!"
+            html += "Comment sent!"
 
             res.send(html);
         }
     });
 });
- */
