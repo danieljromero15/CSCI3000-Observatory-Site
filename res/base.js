@@ -17,10 +17,10 @@ function loadHeader() {
         "<span id='menu'>" +
         "<div><a href='index.html'><img alt='University of North Georgia Logo' id='headericon' src='res/icons/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
         "<div class='flex-container'>" +
-        "<div><a href='contact.html'>Contact Us</a></div>\n" +
+        "<div><a href='index.html#contact'>Contact Us</a></div>\n" +
         "<div><a href='index.html#appointments'>Appointments</a></div>\n" +
         "<div><a href='about.html'>About Us</a></div>\n" +
-        "<div><a href='calendar.html'>Calendar</a></div>\n" +
+        "<div><a href='index.html#calendar-section'>Calendar</a></div>\n" +
         "<div><a href='research.html'>Research</a></div>\n" +
         "</div>" +
         "</span>";
