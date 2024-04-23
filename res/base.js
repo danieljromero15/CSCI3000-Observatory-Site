@@ -32,15 +32,17 @@ function chooseImage() {
     document.getElementById("header_image").setAttribute("src", "res/images/" + headers[random]);
 }
 
-let header = document.getElementById("menu");
+let header = document.getElementById("header");
 let sticky = header.offsetTop;
 
 window.onscroll = function() {
     if (window.scrollY > sticky) {
         document.getElementById("menu").style.background = 'transparent';
-        console.log("Transparent!");
+        document.getElementById("menu div a").style.color = 'white';
+        document.getElementById("menu").style.borderBottom = '';
     } else {
         document.getElementById("menu").style.background = 'linear-gradient(white, whitesmoke)';
-        console.log("Solid!");
+        document.getElementById("menu div a").style.color = 'black';
+        document.getElementById("menu").style.borderBottom = '2px solid goldenrod';
     }
 }
