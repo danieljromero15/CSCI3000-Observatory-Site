@@ -56,7 +56,7 @@ app.get("/all", function(req, res){
 });
 
 app.post("/form_process", function(req, res){
-    const comment = {commentstext: req.body.comment};
+    const comment = {commentstext: req.body.comment, timestamp: new Date(Date.now()).toISOString().slice(0, 19).replace('T', ' ')};
     conn.query("INSERT INTO comments SET ?", comment, function(err, result){
         if(err){
             console.log("ERROR:", err);
