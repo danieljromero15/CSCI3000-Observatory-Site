@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: lightgray;
+    background-color: darkblue;
 }
 
 p, h1, h2, h3 {
@@ -16,6 +16,10 @@ header {
 
 header a:hover {
     border-bottom: 2px solid gold;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .flex-container {
