@@ -21,6 +21,7 @@ th {
 }
 
 .page-content {
+    line-height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
@@ -83,10 +84,12 @@ th {
 }
 
 .info-flex {
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 
 .NGAO-flex {
@@ -96,10 +99,12 @@ th {
 }
 
 .telescope-flex {
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 60px;
 }
 
 .telescope-background{
@@ -140,24 +145,18 @@ th {
 }
 
 .contact-flex{
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .contact-section{
     background-color: white;
     padding-bottom: 10px;
     padding-top: 10px;
-    text-align: center;
     font-size: x-large;
-}
-
-#fbi{
-    justify-content: right;
-    justify-items: center;
-    padding-right: 10%;
 }
 
 #calendar {
