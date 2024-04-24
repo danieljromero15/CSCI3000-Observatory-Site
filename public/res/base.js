@@ -18,11 +18,22 @@ document.addEventListener("DOMContentLoaded", function() {
         if (window.scrollY > sticky) {
             document.getElementById("menu").style.background = "linear-gradient(white, whitesmoke)"
             document.getElementById("menu").style.borderBottom = '2px solid goldenrod';
-            document.getElementById("menu div a").style.color = 'black';
+            document.getElementById("title-color").style.color = 'black';
+            document.getElementById("contact-color").style.color = 'black';
+            document.getElementById("appt-color").style.color = 'black';
+            document.getElementById("tele-color").style.color = 'black';
+            document.getElementById("calendar-color").style.color = 'black';
+            document.getElementById("research-color").style.color = 'black';
         }
         else {
             document.getElementById("menu").style.background = 'transparent';
             document.getElementById("menu").style.borderBottom = '';
+            document.getElementById("title-color").style.color = 'white';
+            document.getElementById("contact-color").style.color = 'white';
+            document.getElementById("appt-color").style.color = 'white';
+            document.getElementById("tele-color").style.color = 'white';
+            document.getElementById("calendar-color").style.color = 'white';
+            document.getElementById("research-color").style.color = 'white';
         }
     }
 });
@@ -30,13 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadHeader() {
     document.getElementById("header").innerHTML =
         "<span id='menu'>" +
-        "<div><a href='index.html'><img alt='University of North Georgia Logo' id='headericon' src='res/icons/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
+        "<div><a href='index.html' id='title-color'><img alt='University of North Georgia Logo' id='headericon' src='res/icons/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
         "<div class='flex-container'>" +
-        "<div><a href='index.html#contact'>Contact Us</a></div>\n" +
-        "<div><a href='index.html#appointments'>Appointments</a></div>\n" +
-        "<div><a href='index.html#telescopes'>About Us</a></div>\n" +
-        "<div><a href='index.html#calendar-section'>Calendar</a></div>\n" +
-        "<div><a href='research.html'>Research</a></div>\n" +
+        "<div><a href='index.html#contact' id='contact-color'>Contact Us</a></div>\n" +
+        "<div><a href='index.html#appointments' id='appt-color'>Appointments</a></div>\n" +
+        "<div><a href='index.html#telescopes' id='tele-color'>About Us</a></div>\n" +
+        "<div><a href='index.html#calendar-section' id='calendar-color'>Calendar</a></div>\n" +
+        "<div><a href='research.html' id='research-color'>Research</a></div>\n" +
         "</div>" +
         "</span>";
 }
