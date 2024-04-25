@@ -16,7 +16,12 @@ h2 {
     color: darkblue;
 }
 
+th {
+    vertical-align: top;
+}
+
 .page-content {
+    line-height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
@@ -48,46 +53,62 @@ h2 {
 #student-table {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     height: 500px;
     width: 400px;
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 
 #public-table {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     height: 500px;
     width: 400px;
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 
 #visit-table {
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     height: 500px;
     width: 400px;
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .info-flex {
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.NGAO-flex {
+    background-color: white;
+    justify-content: center;
+    justify-items: center;
 }
 
 .telescope-flex {
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-bottom: 60px;
 }
 
-.telescope-background {
-    background-color: whitesmoke;
+.telescope-background{
+    background-color: white;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -105,7 +126,7 @@ h2 {
 .info-section {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .table-section {
@@ -123,25 +144,20 @@ h2 {
     background-color: darkblue;
 }
 
-.contact-flex {
+.contact-flex{
+    padding-top: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.contact-section {
+.contact-section{
     background-color: white;
     padding-bottom: 10px;
     padding-top: 10px;
-    text-align: center;
     font-size: x-large;
-}
-
-#fbi {
-    justify-content: right;
-    justify-items: center;
-    padding-right: 10%;
+    text-align: center;
 }
 
 #calendar {
@@ -149,7 +165,20 @@ h2 {
     display: flex;
 }
 
-.calendar-section {
+#facebook-flex{
+    height: 500px;
+    width: 600px;
+}
+
+#facebook{
+    margin: auto;
+    padding-right: 130px;
+    padding-left: 130px;
+    height: 500px;
+    width: 340px;
+}
+
+.calendar-section{
     /*TODO find suitable bg color*/
     background: gainsboro;
     padding-top: 10px;
