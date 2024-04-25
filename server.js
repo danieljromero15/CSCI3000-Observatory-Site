@@ -43,7 +43,7 @@ app.get("/all", function(req, res){
             // produce ordered list of people
             let html = "<ol>";
             rows.forEach(function(row){
-                html += "<li>" + row.commentstext + "</li>";
+                html += "<li>" + row.commentstext + "</li><p>" + row.timestamp + "</p>";
             });
             html += "</ol>";
 
