@@ -9,13 +9,19 @@ app.use(express.static("public"));
 
 app.use(express.urlencoded({extended: false}));
 
-const pass = fs.readFileSync("./password.txt", "utf8");
+let userDetails = fs.readFileSync("./password.txt", "utf-8").split("\r\n");
 
+/*
+password.txt:
+user
+password
+database name
+*/
 const conn = mysql.createConnection({
     host: "localhost",
-    user: "Daniel",
-    password: pass,
-    database: "observatorysite"
+    user: userDetails[0],
+    password: userDetails[1],
+    database: userDetails[2]
 });
 
 app.listen(3000, function(){
