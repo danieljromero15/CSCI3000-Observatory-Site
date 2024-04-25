@@ -172,5 +172,20 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </p>
 </section>
+
+<section class="comments-section">
+    <div id="comments-div">
+        <form id="comment_form" method="post" action="form_process" target="submissionResult">
+            <label for="comment">
+                <textarea id="comment" name="comment" rows="10"></textarea>
+            </label>
+            <br>
+            <iframe id="submission_result" name="submissionResult" scrolling="no"></iframe>
+            <!-- onclick clears comments section once clicked -->
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+
 </body>
 </html>

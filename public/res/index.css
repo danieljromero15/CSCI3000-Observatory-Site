@@ -184,3 +184,27 @@ th {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.comments-section {
+    background: lightslategray;
+    padding: 20px;
+}
+
+#submission_result {
+    border: none;
+    height: 30px;
+    overflow: hidden;
+}
+
+#comment {
+    width: 100%;
+}
+
+#submit {
+    float: right;
+}
+
+#comment_form {
+    margin: auto;
+    width: 40%
+}
