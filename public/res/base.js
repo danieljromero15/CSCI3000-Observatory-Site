@@ -46,8 +46,8 @@ function loadHeader() {
         "<div><a href='index.html#contact' id='contact-color'>Contact Us</a></div>\n" +
         "<div><a href='index.html#appointments' id='appt-color'>Appointments</a></div>\n" +
         "<div><a href='index.html#telescopes' id='tele-color'>About Us</a></div>\n" +
-        "<div><a href='index.html#calendar-section' id='calendar-color'>Calendar</a></div>\n" +
-        "<div><a href='research.html' id='research-color'>Research</a></div>\n" +
+        "<div><a href='index.html#contact' id='calendar-color'>Calendar</a></div>\n" +
+        "<div><a href='research.html' id='research-color'>Gallery</a></div>\n" +
         "</div>" +
         "</span>";
 }

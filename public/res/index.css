@@ -157,11 +157,25 @@ th {
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: x-large;
+    text-align: center;
 }
 
 #calendar {
     justify-content: center;
     display: flex;
+}
+
+#facebook-flex{
+    height: 500px;
+    width: 600px;
+}
+
+#facebook{
+    margin: auto;
+    padding-right: 130px;
+    padding-left: 130px;
+    height: 500px;
+    width: 340px;
 }
 
 .calendar-section{
