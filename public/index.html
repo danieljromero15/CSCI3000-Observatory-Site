@@ -183,7 +183,8 @@
             </label>
             <br>
             <iframe id="submission_result" name="submissionResult" scrolling="no"></iframe>
-            <input id="submit" type="submit" value="Submit">
+            <!-- onclick clears comments section once clicked -->
+            <input id="submit" type="submit" value="Submit" onclick="document.getElementById('comment').value = '';">
         </form>
     </div>
 </section>
