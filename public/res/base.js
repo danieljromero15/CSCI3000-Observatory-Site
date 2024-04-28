@@ -10,6 +10,7 @@ document.getElementById("appointments").addEventListener("click", function(){
 document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     chooseImage();
+    loadComment();
 
     let header = document.querySelector("#header");
     let sticky = header.offsetTop;
@@ -48,9 +49,22 @@ function loadHeader() {
         "</div>" +
         "</span>";
 }
+
 function chooseImage() {
     const headers = ["crab-nebula-mosaic.webp", "carina-nebula.webp", "MeerKAT on SDSS.webp", "bubble-nebula.webp", "orion-nebula.webp"];
 
     let random = Math.floor(Math.random() * headers.length);
     document.getElementById("header_image").setAttribute("src", "res/images/" + headers[random]);
+}
+
+function saveComment(){
+    localStorage.setItem("savedComment", document.getElementById("comment").value);
+}
+
+function deleteComment(){
+    localStorage.removeItem("savedComment");
+}
+
+function loadComment(){
+    document.getElementById("comment").value = localStorage.getItem("savedComment");
 }
