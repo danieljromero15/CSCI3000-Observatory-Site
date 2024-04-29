@@ -58,3 +58,13 @@ html {
     margin-top: 10px;
     float: right;
 }
+
+#comments-div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+#comments-div h2 {
+    text-align: center;
+}

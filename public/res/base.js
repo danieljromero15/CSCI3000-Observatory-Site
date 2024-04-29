@@ -10,7 +10,7 @@ document.getElementById("appointments").addEventListener("click", function(){
 document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     chooseImage();
-    loadComment();
+    loadAppointment();
 
     let header = document.querySelector("#header");
     let sticky = header.offsetTop;
@@ -57,14 +57,18 @@ function chooseImage() {
     document.getElementById("header_image").setAttribute("src", "res/images/" + headers[random]);
 }
 
-function saveComment(){
-    localStorage.setItem("savedComment", document.getElementById("comment").value);
+function saveAppointment(){
+    console.log("onchange running");
+    localStorage.setItem("savedName", document.getElementById("name").value);
+    localStorage.setItem("savedDate", document.getElementById("appointment_time").value);
 }
 
-function deleteComment(){
-    localStorage.removeItem("savedComment");
+function deleteAppointment(){
+    localStorage.removeItem("savedName");
+    localStorage.removeItem("savedDate");
 }
 
-function loadComment(){
-    document.getElementById("comment").value = localStorage.getItem("savedComment");
+function loadAppointment(){
+    document.getElementById("name").value = localStorage.getItem("savedName");
+    document.getElementById("appointment_time").value = localStorage.getItem("savedDate");
 }

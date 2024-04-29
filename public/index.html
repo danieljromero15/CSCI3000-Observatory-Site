@@ -23,7 +23,7 @@
             <h1 class="title"><strong>North Georgia<br>Astronomical Observatory</strong></h1>
             <p class="page-content">
                 The North Georgia Astronomical Observatory exists to promote astronomy <br>
-                education to University of North Georgia students  as well as the public. <br>
+                education to University of North Georgia students as well as the public. <br>
                 This state-of-the-art facility is located only four miles from the UNG <br>
                 Dahlonega Campus. <br>
             </p>
@@ -31,7 +31,9 @@
         </div>
 
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.290180958715!2d-84.05634388871104!3d34.52087539272765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885f659f334a18f5%3A0x92d524aa93e226f5!2sNorth%20Georgia%20Astronomical%20Observatory!5e0!3m2!1sen!2sus!4v1713372669623!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.290180958715!2d-84.05634388871104!3d34.52087539272765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885f659f334a18f5%3A0x92d524aa93e226f5!2sNorth%20Georgia%20Astronomical%20Observatory!5e0!3m2!1sen!2sus!4v1713372669623!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
@@ -165,7 +167,8 @@
     <h2>Dome Installation!</h2>
 
     <p>
-        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ilc-FytnojY?si=35eDIgesTs6jzfzs"
+        <iframe loading="lazy" width="560" height="315"
+                src="https://www.youtube.com/embed/ilc-FytnojY?si=35eDIgesTs6jzfzs"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -174,14 +177,21 @@
 
 <section class="comments-section">
     <div id="comments-div">
+        <h2>Set an appointment at the observatory</h2>
         <form id="comment_form" method="post" action="form_process" target="submissionResult">
-            <label for="comment">
-                <textarea id="comment" name="comment" rows="10" oninput="saveComment()"></textarea>
-            </label>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" oninput="saveAppointment()">
+
+            <br><br>
+
+            <label for="appointment_time">Date and Time: </label>
+            <input type="datetime-local" name="appointment" id="appointment_time" onchange="saveAppointment()">
+
             <br>
+
             <iframe id="submission_result" name="submissionResult" scrolling="no"></iframe>
             <!-- onclick clears comments section once clicked -->
-            <input id="submit" type="submit" value="Submit" onclick="deleteComment()">
+            <input id="submit" type="submit" value="Submit" onclick="deleteAppointment()">
         </form>
     </div>
 </section>
