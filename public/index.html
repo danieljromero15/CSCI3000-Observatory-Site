@@ -130,11 +130,10 @@
             </table>
         </div>
     </div>
-
 </section>
 
 <section class="contact-section" id="contact">
-
+    <!--<h1 class="title">Contact Us!</h1> -->
     <div class="contact-flex">
         <div id="facebook-flex">
             <iframe id="facebook"
@@ -145,7 +144,7 @@
         </div>
 
         <div id="calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?src=17ae5dd8cb3b5ff033e43ce312aa7e19e1f3ac8dc3926f553235985af1a7f403%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="600" height="500"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=17ae5dd8cb3b5ff033e43ce312aa7e19e1f3ac8dc3926f553235985af1a7f403%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="340" height="500"></iframe>
         </div>
     </div>
 
@@ -177,12 +176,12 @@
     <div id="comments-div">
         <form id="comment_form" method="post" action="form_process" target="submissionResult">
             <label for="comment">
-                <textarea id="comment" name="comment" rows="10"></textarea>
+                <textarea id="comment" name="comment" rows="10" oninput="saveComment()"></textarea>
             </label>
             <br>
             <iframe id="submission_result" name="submissionResult" scrolling="no"></iframe>
             <!-- onclick clears comments section once clicked -->
-            <input id="submit" type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit" onclick="deleteComment()">
         </form>
     </div>
 </section>
