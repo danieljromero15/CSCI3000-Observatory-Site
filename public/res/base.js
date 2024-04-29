@@ -41,9 +41,9 @@ function loadHeader() {
         "<span id='menu'>" +
         "<div><a href='index.html' class='header-button'><img alt='University of North Georgia Logo' id='headericon' src='res/icons/UNG-Icon.jpg'> North Georgia Astronomical Observatory</a></div>\n" +
         "<div class='flex-container'>" +
-        "<div><a href='index.html#contact' class='header-button'>Contact Us</a></div>\n" +
-        "<div><a href='index.html#appointments' class='header-button'>Appointments</a></div>\n" +
         "<div><a href='index.html#telescopes' class='header-button'>About Us</a></div>\n" +
+        "<div><a href='index.html#appointments' class='header-button'>Appointments</a></div>\n" +
+        "<div><a href='index.html#contact' class='header-button'>Contact Us</a></div>\n" +
         "<div><a href='index.html#contact' class='header-button'>Calendar</a></div>\n" +
         "<div><a href='research.html' class='header-button'>Gallery</a></div>\n" +
         "</div>" +

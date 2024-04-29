@@ -149,31 +149,30 @@ th {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .contact-section{
     background-color: white;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 30px;
     font-size: x-large;
     text-align: center;
 }
 
 #calendar {
-    justify-content: center;
+    padding-left: 30px;
     display: flex;
 }
 
 #facebook-flex{
+    padding-right: 30px;
     height: 500px;
-    width: 600px;
+    width: 340px;
 }
 
 #facebook{
     margin: auto;
-    padding-right: 130px;
-    padding-left: 130px;
     height: 500px;
     width: 340px;
 }
