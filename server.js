@@ -42,14 +42,14 @@ app.get('/', function(req, res) {
 
 
 app.get("/all", function(req, res){
-    conn.query("SELECT * FROM comments", function (err, rows) {
+    conn.query("SELECT * FROM appointments", function (err, rows) {
         if(err){
             console.log("ERROR: ", err);
         }else{
             // produce ordered list of people
             let html = "<ol>";
             rows.forEach(function(row){
-                html += "<li>" + row.commentstext + "</li><p>" + row.timestamp + "</p>";
+                html += "<li>" + row.name + "</li><p>" + row.date + "</p>";
             });
             html += "</ol>";
 
@@ -62,8 +62,8 @@ app.get("/all", function(req, res){
 });
 
 app.post("/form_process", function(req, res){
-    const comment = {commentstext: req.body.comment, timestamp: new Date(Date.now()).toISOString().slice(0, 19).replace('T', ' ')};
-    conn.query("INSERT INTO comments SET ?", comment, function(err, result){
+    const appointment = {name: req.body.name, date: req.body.appointment.slice(0, 19).replace('T', ' ')};
+    conn.query("INSERT INTO appointments SET ?", appointment, function(err, result){
         if(err){
             console.log("ERROR:", err);
             res.send("Error in insertion!");
@@ -71,7 +71,7 @@ app.post("/form_process", function(req, res){
             console.log("Inserted " + result.affectedRows + " row"); // success
 
             let html = "";
-            html += "Comment sent!"
+            html += "Appointment set!"
 
             res.send(html);
         }
