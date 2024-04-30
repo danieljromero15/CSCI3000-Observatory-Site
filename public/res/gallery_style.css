@@ -8,7 +8,7 @@
 }
 .collection{
     height: 100vh;
-    background-color: lightgrey;
+    background-color: darkblue;
     display: flex;
     justify-content: center;
     align-items: center;

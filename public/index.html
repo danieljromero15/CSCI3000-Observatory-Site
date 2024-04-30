@@ -8,7 +8,7 @@
     <link rel="icon" href="res/icons/UNG-Icon.jpg">
     <title>North Georgia Astronomical Observatory</title>
 </head>
-<body>
+<body id="top">
 <section class="image-section">
     <header id="header"></header>
     <div class="img-container">
@@ -61,11 +61,17 @@
                 allowing us to use the Horizontal Coordinate System when <br>
                 tracking stars. <br>
             </p>
+            <span id="gallery_section"></span>
         </div>
     </div>
 </section>
 
-<section class="table-section" id="appointments">
+<!-- TODO: add gallery section -->
+<section>
+<iframe src="gallery.html" scrolling="no" id="gallery"></iframe>
+</section>
+
+<section class="table-section">
     <div class="info-flex">
         <div>
             <table id="student-table">
@@ -130,7 +136,29 @@
                     </th>
                 </tr>
             </table>
+            <span  id="appointments"></span>
         </div>
+    </div>
+</section>
+
+<section class="comments-section">
+    <div id="comments-div">
+        <h2>Set an appointment at the observatory</h2>
+        <form id="comment_form" method="post" action="form_process" target="submissionResult">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" oninput="saveAppointment()">
+
+            <br><br>
+
+            <label for="appointment_time">Date and Time: </label>
+            <input type="datetime-local" name="appointment" id="appointment_time" onchange="saveAppointment()">
+
+            <br>
+
+            <iframe id="submission_result" name="submissionResult" scrolling="no"></iframe>
+            <!-- onclick clears comments section once clicked -->
+            <input id="submit" type="submit" value="Submit" onclick="deleteAppointment()">
+        </form>
     </div>
 </section>
 
@@ -146,7 +174,8 @@
         </div>
 
         <div id="calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?src=17ae5dd8cb3b5ff033e43ce312aa7e19e1f3ac8dc3926f553235985af1a7f403%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="340" height="500"></iframe>
+            <iframe src="https://calendar.google.com/calendar/embed?src=17ae5dd8cb3b5ff033e43ce312aa7e19e1f3ac8dc3926f553235985af1a7f403%40group.calendar.google.com&ctz=America%2FNew_York"
+                    style="border: 0" width="340" height="500"></iframe>
         </div>
     </div>
 
@@ -173,27 +202,6 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </p>
-</section>
-
-<section class="comments-section">
-    <div id="comments-div">
-        <h2>Set an appointment at the observatory</h2>
-        <form id="comment_form" method="post" action="form_process" target="submissionResult">
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" oninput="saveAppointment()">
-
-            <br><br>
-
-            <label for="appointment_time">Date and Time: </label>
-            <input type="datetime-local" name="appointment" id="appointment_time" onchange="saveAppointment()">
-
-            <br>
-
-            <iframe id="submission_result" name="submissionResult" scrolling="no"></iframe>
-            <!-- onclick clears comments section once clicked -->
-            <input id="submit" type="submit" value="Submit" onclick="deleteAppointment()">
-        </form>
-    </div>
 </section>
 
 </body>

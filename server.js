@@ -73,13 +73,14 @@ date: datetime not null
 app.post("/form_process", function (req, res) {
     const appointment = {name: req.body.name, date: req.body.appointment.slice(0, 19).replace('T', ' ')};
     conn.query("INSERT INTO appointments SET ?", appointment, function (err, result) {
+        let html = "<style>*{color:white;}</style>"
         if (err) {
             console.log("ERROR:", err);
-            res.send("Error in insertion!");
+            html += "Error in insertion!"
+            res.send(html);
         } else {
             console.log("Inserted " + result.affectedRows + " row"); // success
 
-            let html = "";
             html += "Appointment set!"
 
             res.send(html);

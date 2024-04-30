@@ -59,12 +59,21 @@ html {
     float: right;
 }
 
-#comments-div{
+#comments-div {
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
+    background-color: darkblue;
+    border: white solid 1px;
 }
 
 #comments-div h2 {
     text-align: center;
+    color: white;
+}
+
+#gallery {
+    width: 100%;
+    height: 500px;
+    border: 0;
 }
