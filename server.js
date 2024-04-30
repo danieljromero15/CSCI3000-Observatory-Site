@@ -9,7 +9,11 @@ app.use(express.static("public"));
 
 app.use(express.urlencoded({extended: false}));
 
-let userDetails = fs.readFileSync("./password.txt", "utf-8").split("\r\n");
+// sets line separator depending on OS (only tested on linux rn)
+let br
+if (process.platform === "win32") br = "\r\n";
+else br = "\n"
+let userDetails = fs.readFileSync("./password.txt", "utf-8").split(br);
 
 /*
 password.txt:
@@ -24,7 +28,7 @@ const conn = mysql.createConnection({
     database: userDetails[2]
 });
 
-app.listen(3000, function(){
+app.listen(3000, function () {
     console.log("Listening on port 3000...")
 });
 
@@ -36,24 +40,24 @@ conn.connect(function (err) {
     }
 });
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, './index.html'));
 });
 
 
-app.get("/all", function(req, res){
+app.get("/all", function (req, res) {
     conn.query("SELECT * FROM appointments", function (err, rows) {
-        if(err){
+        if (err) {
             console.log("ERROR: ", err);
-        }else{
+        } else {
             // produce ordered list of people
             let html = "<ol>";
-            rows.forEach(function(row){
+            rows.forEach(function (row) {
                 html += "<li>" + row.name + "</li><p>" + row.date + "</p>";
             });
             html += "</ol>";
 
-            if(rows.length === 0){
+            if (rows.length === 0) {
                 html = "<p>No comments found.</p>";
             }
             res.send(html);
@@ -61,13 +65,18 @@ app.get("/all", function(req, res){
     });
 });
 
-app.post("/form_process", function(req, res){
+/*
+id: autoincrement int (optional)
+name: varchar(45) not null
+date: datetime not null
+ */
+app.post("/form_process", function (req, res) {
     const appointment = {name: req.body.name, date: req.body.appointment.slice(0, 19).replace('T', ' ')};
-    conn.query("INSERT INTO appointments SET ?", appointment, function(err, result){
-        if(err){
+    conn.query("INSERT INTO appointments SET ?", appointment, function (err, result) {
+        if (err) {
             console.log("ERROR:", err);
             res.send("Error in insertion!");
-        }else{
+        } else {
             console.log("Inserted " + result.affectedRows + " row"); // success
 
             let html = "";
