@@ -45,7 +45,7 @@ function loadHeader() {
         "<div><a href='index.html#appointments' class='header-button'>Appointments</a></div>\n" +
         "<div><a href='index.html#contact' class='header-button'>Contact Us</a></div>\n" +
         "<div><a href='index.html#contact' class='header-button'>Calendar</a></div>\n" +
-        "<div><a href='research.html' class='header-button'>Gallery</a></div>\n" +
+        "<div><a href='gallery.html' class='header-button'>Gallery</a></div>\n" +
         "</div>" +
         "</span>";
 }
